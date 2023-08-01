@@ -25,11 +25,12 @@ p{
   font-family: var(--texto);
 }
 header{
-  background: linear-gradient(rgba(0, 0, 0, .70) 0%, rgba(0, 0, 0, 0.7) 100%), url(img/Background-principal.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(img/Banner\ para\ Twitch.png);
   background-position: center;
   background-size: cover;
   align-items: center;
   justify-content: center;
+  height: 800px;
 }
 
 /*-------BARRA DE NAVEGACION-----*/
@@ -58,21 +59,6 @@ header{
   color: #fff;
 }
 /*-------HOME-------*/
-.head{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
-}
-.cont-principal-left{
-  width: 50%;
-}
-
-.cont-principal-right img{
-    width: 100%;
-}
-
 /*----------CONTENIDO POPULAR----------*/ 
 .popular{
   background-color: black;
@@ -130,10 +116,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 30px;
 }
 .cont-stream-left{
    background: radial-gradient(circle, rgb(131, 0, 171) 10%, rgba(0,0,0, .0 ) 55%);
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
 }
@@ -143,7 +130,8 @@ header{
 }
 .cont-stream-right{
     width: 50%;
-    margin: 200px;
+    padding: 25px;
+
 }
 .cont-stream-right button{
   width: 250px;
@@ -160,22 +148,23 @@ header{
 /*----------GAMEPLAYS----------*/
 .gameplays{
     width: 100%;
-    background-image: linear-gradient(black , rgb(167, 0, 0), black);
+    background-image: linear-gradient(black , #005ca7, black);
     
 }
 .cont-gameplays{
     width: 100%;
     display: flex;
+    padding: 30px;
     align-items: center;
-    justify-content: center;
 }
 .cont-gameplays-left{
-    margin-left: 10%;
     width: 50%;
+    text-align: justify;
+    padding-left: 50px;
 }
 .cont-gameplays-left button{
   width: 250px;
-  background-color: red;
+  background-color: #005ca7;
   border-radius: 5px;
   border: none;
   font-size: 30px;
@@ -187,12 +176,56 @@ header{
   font-family: var(--titulos);
 }
 .cont-gameplays-right{
-  width: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  
 }
 .cont-gameplays-right img{
-  width: 100%;
+  width: 35%;
 }
+/*----------Video Comics----------*/
+.videocomics{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px ;
+  background-color: black;
+  background-image: linear-gradient(black 15% , red, black);
+}
+.cont-videocomics{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-comics{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.text-comics button{
+  width: 250px;
+  background-color: rgb(176, 4, 4);
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+}
+.text-comics button a{
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--titulos);
+}
+.image-comics {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-comics img{
+  width: 75%;
+}
+
 /*----------RESENAS Y OPINIONES----------*/
 .resenas{
   width: 100%;
