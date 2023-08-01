@@ -131,6 +131,7 @@ header{
 .cont-stream-right{
     width: 50%;
     padding: 25px;
+    text-align: justify;
 
 }
 .cont-stream-right button{
@@ -203,6 +204,7 @@ header{
   width: 50%;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 .text-comics button{
   width: 250px;
@@ -250,6 +252,7 @@ header{
   align-content: center; 
   justify-content: center;
   display: block;
+  text-align: justify;
 }
 .cont-resenas-center h2{
 margin-left: 11%;
@@ -287,18 +290,19 @@ footer img{
 
 /*----------MEDIA QUERYS----------*/
 @media screen and (max-width: 1024px){  
-    .popular-video,
-    .cont-stream-left,
-    .cont-stream-right,
-    .cont-gameplays-left,
-    .cont-gameplays-right,
-    .cont-resenas-center,
-    .cont-resenas-right,
-    .cont-principal-left,
-    .cont-principal-right{
+  header{
+    height: 500px;
+  }
+  nav{
+    display: none !important;
+  }
+    .popular-video{
         width: 100%;
         margin: 10px;
         padding: 0;
+    }
+    #none{
+      display: none;
     }
     .cont-resenas-center button{
         margin: 0;
@@ -312,4 +316,29 @@ footer img{
         padding: 0;
         margin: 10px;
     }
-}
+    .cont-stream{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .cont-stream-right, .cont-gameplays-left, .text-comics {
+      width: 100%;
+    }
+    .cont-resenas-center{
+      width: 80%;
+    }
+    .cont-resenas-center h2{
+      margin: 0;
+    }
+    .cont-gameplays{
+      display: flex;
+      flex-direction: column;
+    }
+    .cont-gameplays-right{
+      display: none;
+    }
+    .cont-videocomics, .cont-resenas{
+      display: flex;
+      flex-direction: column ;
+    }
+  
+  }
